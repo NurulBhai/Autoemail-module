@@ -26,7 +26,7 @@ def get_info():
 def send_email(receiver, subject, message):
     server = smtplib.SMTP('smtp.gmail.com', 587)
     server.starttls()
-    server.login('qumar.nurool@gmail.com', 'Helloworld@123')
+    server.login('qumar.nurool@gmail.com', '$password')
     email = EmailMessage()
     email['From'] = 'qumar.nurool@gmail.com'
     email['To'] = receiver
